@@ -12,8 +12,8 @@ PATH = "driver/chromedriver.exe"
 URL = "https://cuonline.cuiwah.edu.pk:8095/"
 
 # login credentials
-USERNAME = "FA20-BCS-004"
-PASSWORD = "MaHunStu"
+USERNAME = "FA20-BCS-000"
+PASSWORD = "password"
 
 
 def save_html(name, html_page):
@@ -32,8 +32,6 @@ def read_html(name):
 
 # START
 chrome_options = webdriver.ChromeOptions()
-# chrome_options.add_argument(
-#     "--user-data-dir=C:\\Users\\Chaudhry Faisal\\AppData\\Local\\Google\\Chrome\\User Data\\Default")
 chrome_options.add_argument("--start-maximized")
 driver = webdriver.Chrome(PATH, options=chrome_options)
 driver.set_page_load_timeout(60)
