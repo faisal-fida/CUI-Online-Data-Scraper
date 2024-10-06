@@ -11,9 +11,6 @@ import captcha_bypass as cb
 PATH = "driver/chromedriver.exe"
 URL = "https://cuonline.cuiwah.edu.pk:8095/"
 
-# login credentials
-USERNAME = "FA20-BCS-000"
-PASSWORD = "password"
 
 
 def save_html(name, html_page):
